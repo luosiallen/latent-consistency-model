@@ -12,12 +12,5 @@ Project Page: https://latent-consistency-models.github.io
 ## BibTeX
 
 ```bibtex
-@misc{luo2023difffoley, 
-title={Diff-Foley: Synchronized Video-to-Audio Synthesis with Latent Diffusion Models}, 
-author={Simian Luo and Chuanhao Yan and Chenxu Hu and Hang Zhao}, 
-year={2023}, 
-eprint={2306.17203}, 
-archivePrefix={arXiv}, 
-primaryClass={cs.SD} 
-}
+
 ```
