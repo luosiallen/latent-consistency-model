@@ -1,12 +1,18 @@
 # Latent Consistency Models
 
-Offical Repository of the paper: *[Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference](https://arxiv.org/abs/2310.04378)*. 
+Offical Repository of the paper: *[Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference](https://arxiv.org/abs/2310.04378)*.
 
 Project Page: https://latent-consistency-models.github.io
 
 
 <p align="center">
     <img src="teaser.png">
+</p>
+
+By distilling classifier-free guidance into the model's input, LCM can generate high-quality images in very short inference time. We compare the inference time at the setting of 768 x 768 resolution, CFG scale w=8, batchsize=4, inference steps=4 using a A800 GPU. 
+
+<p align="center">
+    <img src="speed_fid.png">
 </p>
 
 ## BibTeX
