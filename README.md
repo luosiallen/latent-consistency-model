@@ -15,6 +15,35 @@ By distilling classifier-free guidance into the model's input, LCM can generate 
     <img src="speed_fid.png">
 </p>
 
+## Usage
+
+You can try out Latency Consistency Models directly on:
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model)
+
+To run the model yourself, you can leverage the 🧨 Diffusers library:
+1. Install the library:
+```
+pip install diffusers transformers accelerate
+```
+
+2. Run the model:
+```py
+from diffusers import DiffusionPipeline
+import torch
+
+pipe = DiffusionPipeline.from_pretrained("SimianLuo/LCM_Dreamshaper_v7", custom_pipeline="latent_consistency_txt2img")
+
+# To save GPU memory, torch.float16 can be used, but it may compromise image quality.
+pipe.to(torch_device="cuda", torch_dtype=torch.float32)
+
+prompt = "Self-portrait oil painting, a beautiful cyborg with golden hair, 8k"
+
+# Can be set to 1~50 steps. LCM support fast inference even <= 4 steps. Recommend: 1~8 steps.
+num_inference_steps = 4 
+
+images = pipe(prompt=prompt, num_inference_steps=num_inference_steps, guidance_scale=8.0, lcm_origin_steps=50, output_type="pil", custom_revision=main).images
+```
+
 ## BibTeX
 
 ```bibtex
