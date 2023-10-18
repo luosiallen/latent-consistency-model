@@ -4,6 +4,8 @@ Official Repository of the paper: *[Latent Consistency Models: Synthesizing High
 
 Project Page: https://latent-consistency-models.github.io
 
+🤗 Hugging Face Demos: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model)
+
 ## News 
 
 - (🔥New) 2023/10/19 We provide a demo of LCM in 🤗 Hugging Face Space. Try it [here](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model).
