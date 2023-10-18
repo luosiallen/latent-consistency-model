@@ -4,6 +4,12 @@ Official Repository of the paper: *[Latent Consistency Models: Synthesizing High
 
 Project Page: https://latent-consistency-models.github.io
 
+## News 
+
+- (🔥New) 2023/10/19 We provide a demo of LCM in 🤗 Hugging Face Space. Try it [here](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model).
+- (🔥New) 2023/10/19 We provide the LCM model (Dreamshaper_v7) in 🤗 Hugging Face. Download [here](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7).
+- (🔥New) 2023/10/19 LCM is integrated in 🧨 Diffusers library. Please refer to the "Usage".
+
 # Demos & Models Released
 Ours Hugging Face Demo and Model are released ! Latent Consistency Models are supported in 🧨 [diffusers](https://github.com/huggingface/diffusers). 
 
