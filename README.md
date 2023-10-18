@@ -4,12 +4,12 @@ Official Repository of the paper: *[Latent Consistency Models: Synthesizing High
 
 Project Page: https://latent-consistency-models.github.io
 
-## Demos & Models Released
-Ours Hugging Face Demo and Model are released ! Also be integrated in 🧨 Diffusers library. 
+# Demos & Models Released
+Ours Hugging Face Demo and Model are released ! Latent Consistency Models are supported in 🧨 [diffusers](https://github.com/huggingface/diffusers). 
 
-Hugging Face Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model)  (It is truly amazing!)
+Hugging Face Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model)
 
-LCM Model Download: https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7
+LCM Model Download: [LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)
 
 <p align="center">
     <img src="teaser.png">
