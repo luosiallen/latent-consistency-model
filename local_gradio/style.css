@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+  }
+  
+  #duplicate-button {
+    margin: auto;
+    color: #fff;
+    background: #1565c0;
+    border-radius: 100vh;
+  }
+  
+  #component-0 {
+    max-width: 830px;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
