@@ -6,6 +6,9 @@ Project Page: https://latent-consistency-models.github.io
 
 Try our 🤗 Hugging Face Demos: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model) 🔥🔥🔥
 
+Join our LCM discord channels <a href="https://discord.gg/tKuDcPH8" style="text-decoration:none;">
+    <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a> for discussions. Coders are welcome to contribute.
+
 ## News 
 - (🔥New) 2023/10/21 We support **local gradio demo** now. You can run the LCM model locally!! Please refer to the "**Local gradio Demos**".
 - (🔥New) 2023/10/19 We provide a demo of LCM in 🤗 Hugging Face Space. Try it [here](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model).
