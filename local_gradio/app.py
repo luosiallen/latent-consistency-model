@@ -46,7 +46,8 @@ device = "cuda"   # Linux & Windows
       To reduce GPU memory you can set "DTYPE=torch.float16",
       but image quality might be compromised
 """
-DTYPE = torch.float32  # torch.float16 works as well, but pictures seem to be a bit worse
+# DTYPE = torch.float32  # For best quality, recommend use torch.float32. 
+DTYPE = torch.float16  # To save GPU memory, you can use torch.float16, but pictures seem to be a bit worse.
 
 
 pipe = DiffusionPipeline.from_pretrained("SimianLuo/LCM_Dreamshaper_v7", custom_pipeline="latent_consistency_txt2img", custom_revision="main")
