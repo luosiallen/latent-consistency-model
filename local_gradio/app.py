@@ -46,8 +46,7 @@ device = "cuda"   # Linux & Windows
       To reduce GPU memory you can set "DTYPE=torch.float16",
       but image quality might be compromised
 """
-# DTYPE = torch.float32  # For best quality, recommend use torch.float32. 
-DTYPE = torch.float16  # To save GPU memory, you can use torch.float16, but pictures seem to be a bit worse.
+DTYPE = torch.float16  # torch.float16 works as well, but pictures seem to be a bit worse
 
 
 pipe = DiffusionPipeline.from_pretrained("SimianLuo/LCM_Dreamshaper_v7", custom_pipeline="latent_consistency_txt2img", custom_revision="main")
@@ -59,16 +58,19 @@ def randomize_seed_fn(seed: int, randomize_seed: bool) -> int:
         seed = random.randint(0, MAX_SEED)
     return seed
 
-def save_image(img, profile: gr.OAuthProfile | None, metadata: dict):
+def save_image(img, profile: gr.OAuthProfile | None, metadata: dict, root_path='./'):
     unique_name = str(uuid.uuid4()) + '.png'
+    unique_name = os.path.join(root_path, unique_name)
     img.save(unique_name)
     # gr_user_history.save_image(label=metadata["prompt"], image=img, profile=profile, metadata=metadata)
     return unique_name
 
 def save_images(image_array, profile: gr.OAuthProfile | None, metadata: dict):
     paths = []
+    root_path = './images/'
+    os.makedirs(root_path, exist_ok=True)
     with ThreadPoolExecutor() as executor:
-        paths = list(executor.map(save_image, image_array, [profile]*len(image_array), [metadata]*len(image_array)))
+        paths = list(executor.map(save_image, image_array, [profile]*len(image_array), [metadata]*len(image_array), [root_path]*len(image_array)))
     return paths
 
 def generate(
@@ -80,11 +82,13 @@ def generate(
     num_inference_steps: int = 4,
     num_images: int = 4,
     randomize_seed: bool = False,
+    param_dtype='torch.float16',
     progress = gr.Progress(track_tqdm=True),
     profile: gr.OAuthProfile | None = None,
 ) -> PIL.Image.Image:
     seed = randomize_seed_fn(seed, randomize_seed)
     torch.manual_seed(seed)
+    pipe.to(torch_device=device, torch_dtype=torch.float16 if param_dtype == 'torch.float16' else torch.float32)
     start_time = time.time()
     result = pipe(
         prompt=prompt,
@@ -176,6 +180,11 @@ with gr.Blocks(css="style.css") as demo:
                 value=2,
                 visible=True,
             )
+            dtype_choices = ['torch.float16','torch.float32']
+            param_dtype = gr.Radio(dtype_choices,label='torch.dtype',  
+                                      value=dtype_choices[0],
+                                      interactive=True,
+                                      info='To save GPU memory, use torch.float16. For better quality, use torch.float32.')
 
     # with gr.Accordion("Past generations", open=False):
     #     gr_user_history.render()
@@ -202,7 +211,8 @@ with gr.Blocks(css="style.css") as demo:
             guidance_scale,
             num_inference_steps,
             num_images,
-            randomize_seed
+            randomize_seed,
+            param_dtype
         ],
         outputs=[result, seed],
         api_name="run",
