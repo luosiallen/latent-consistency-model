@@ -23,7 +23,7 @@ To run the model locally, you can download the "local_gradio" folder:
 ```
 pip install diffusers transformers accelerate gradio==3.48.0 
 ```
-3. Launch the gradio:
+3. Launch the gradio: (For MacOS users, need to set the device="mps" in app.py)
 ```
 python app.py
 ```
