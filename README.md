@@ -10,7 +10,8 @@ Try our 🤗 Hugging Face Demos: [![Hugging Face Spaces](https://img.shields.io/
     <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a> for discussions. Coders are welcome to contribute.
 
 ## News 
-- (🔥New) 2023/10/21 We support **local gradio demo** now. You can run the LCM model locally!! Please refer to the "**Local gradio Demos**".
+- (🔥New) 2023/10/22 **Google Colab** is supported now. Thanks for [@camenduru](https://github.com/camenduru/stable-diffusion-webui-colab) See the link: [Colab](https://github.com/camenduru/stable-diffusion-webui-colab/blob/main/special/stable/lcm_dreamshaper_v7_webui_colab.ipynb)
+- (🔥New) 2023/10/21 We support **local gradio demo** now. LCM can run locally!! Please refer to the "**Local gradio Demos**".
 - (🔥New) 2023/10/19 We provide a demo of LCM in 🤗 Hugging Face Space. Try it [here](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model).
 - (🔥New) 2023/10/19 We provide the LCM model (Dreamshaper_v7) in 🤗 Hugging Face. Download [here](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7).
 - (🔥New) 2023/10/19 LCM is integrated in 🧨 Diffusers library. Please refer to the "Usage".
