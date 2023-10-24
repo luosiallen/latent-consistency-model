@@ -37,6 +37,8 @@ Hugging Face Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A
 
 Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-model/badge)](https://replicate.com/cjwbw/latent-consistency-model) 
 
+Tungsten Demo: [![Tungsten](https://tungsten.run/mjpyeon/lcm/_badge)](https://tungsten.run/mjpyeon/lcm)
+
 LCM Model Download: [LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)
 
 <p align="center">
