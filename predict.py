@@ -10,13 +10,23 @@ from cog import BasePredictor, Input, Path
 class Predictor(BasePredictor):
     def setup(self) -> None:
         """Load the model into memory to make running multiple predictions efficient"""
+
+        # Official LCM Pipeline supported now.
         self.pipe = DiffusionPipeline.from_pretrained(
             "SimianLuo/LCM_Dreamshaper_v7",
-            custom_pipeline="latent_consistency_txt2img",
-            custom_revision="main",
             cache_dir="model_cache",
             local_files_only=True,
         )
+
+        # Want to use older ones, need to add "revision="fb9c5d1"
+        # self.pipe = DiffusionPipeline.from_pretrained(
+        #     "SimianLuo/LCM_Dreamshaper_v7",
+        #     custom_pipeline="latent_consistency_txt2img",
+        #     custom_revision="main",
+        #     revision="fb9c5d1",
+        #     cache_dir="model_cache",
+        #     local_files_only=True,
+        # )
         self.pipe.to(torch_device="cuda", torch_dtype=torch.float32)
 
     def predict(
