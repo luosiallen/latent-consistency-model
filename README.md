@@ -37,15 +37,19 @@ python app.py
 ## Demos & Models Released
 Ours Hugging Face Demo and Model are released ! Latent Consistency Models are supported in 🧨 [diffusers](https://github.com/huggingface/diffusers). 
 
+LCM Model Download: [LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)
+
 Hugging Face Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model)
 
 Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-model/badge)](https://replicate.com/cjwbw/latent-consistency-model) 
+
+OpenXLab Demo: [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/Latent-Consistency-Model/Latent-Consistency-Model)
 
 Tungsten Demo: [![Tungsten](https://tungsten.run/mjpyeon/lcm/_badge)](https://tungsten.run/mjpyeon/lcm)
 
 Novita.AI Demo:  [![Novita.AI Latent Consistency Playground](https://img.shields.io/badge/%20Novita.AI%20-Demo%20&%20API-blue)](https://novita.ai/product/lcm-txt2img)
 
-LCM Model Download: [!LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)](https://novita.ai/product/lcm-txt2img)
+
 
 <p align="center">
     <img src="teaser.png">
