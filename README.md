@@ -43,7 +43,9 @@ Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-mod
 
 Tungsten Demo: [![Tungsten](https://tungsten.run/mjpyeon/lcm/_badge)](https://tungsten.run/mjpyeon/lcm)
 
-LCM Model Download: [LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)
+Novita.AI Demo:  [![Novita.AI Latent Consistency Playground](https://img.shields.io/badge/%20Novita.AI%20-Demo%20&%20API-blue)](https://novita.ai/product/lcm-txt2img)
+
+LCM Model Download: [!LCM_Dreamshaper_v7](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7)](https://novita.ai/product/lcm-txt2img)
 
 <p align="center">
     <img src="teaser.png">
