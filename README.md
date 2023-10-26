@@ -16,7 +16,7 @@ Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-mod
 - (🔥New) 2023/10/24 Simple **Streamlit UI** for local use: See the [link](https://github.com/akx/lcm_test) Thanks for [@akx](https://github.com/akx).
 - (🔥New) 2023/10/24 We support **SD-Webui** and **ComfyUI** now!! Thanks for [@0xbitches](https://github.com/0xbitches). See the link: [SD-Webui](https://github.com/0xbitches/sd-webui-lcm) and [ComfyUI](https://github.com/0xbitches/ComfyUI-LCM). 
 - (🔥New) 2023/10/23 Running on **Windows/Linux CPU** is also supported! Thanks for [@rupeshs](https://github.com/rupeshs) See the [link](https://github.com/rupeshs/fastsdcpu).
-- (🔥New) 2023/10/22 **Google Colab** is supported now. Thanks for [@camenduru](https://github.com/camenduru/stable-diffusion-webui-colab) See the link: [Colab](https://github.com/camenduru/stable-diffusion-webui-colab/blob/main/special/stable/lcm_dreamshaper_v7_webui_colab.ipynb)
+- (🔥New) 2023/10/22 **Google Colab** is supported now. Thanks for [@camenduru](https://github.com/camenduru) See the link: [Colab](https://github.com/camenduru/latent-consistency-model-colab)
 - (🔥New) 2023/10/21 We support **local gradio demo** now. LCM can run locally!! Please refer to the "**Local gradio Demos**".
 - (🔥New) 2023/10/19 We provide a demo of LCM in 🤗 Hugging Face Space. Try it [here](https://huggingface.co/spaces/SimianLuo/Latent_Consistency_Model).
 - (🔥New) 2023/10/19 We provide the LCM model (Dreamshaper_v7) in 🤗 Hugging Face. Download [here](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7).
