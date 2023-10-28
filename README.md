@@ -22,12 +22,18 @@ Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-mod
 - (🔥New) 2023/10/19 We provide the LCM model (Dreamshaper_v7) in 🤗 Hugging Face. Download [here](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7).
 - (🔥New) 2023/10/19 LCM is integrated in 🧨 Diffusers library. Please refer to the "Usage".
 
-### Our Contributors :
-<a href="https://github.com/luosiallen/latent-consistency-model/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=luosiallen/latent-consistency-model" />
-</a>
 
-## 🔥 Local gradio Demos:
+## 🔥 Image2Image Demos (Image-to-Image):
+We support **Img2Img** now! Try the impressive img2img demos here: [Replicate](https://replicate.com/fofr/latent-consistency-model),   [SD-webui](https://github.com/0xbitches/sd-webui-lcm),  [ComfyUI](https://github.com/0xbitches/ComfyUI-LCM)
+
+Local gradio for img2img is on the way!
+
+<p align="center">
+    <img src="/img2img_demo/taylor.png", width="50%"><img src="/img2img_demo/elon.png", width="49%">
+</p>
+
+## 🔥 Local gradio Demos (Text-to-Image):
+
 To run the model locally, you can download the "local_gradio" folder:
 1. Install Pytorch (CUDA). MacOS system can download the "MPS" version of Pytorch. Please refer to: [https://pytorch.org](https://pytorch.org)
 2. Install the main library:
@@ -100,6 +106,11 @@ num_inference_steps = 4
 
 images = pipe(prompt=prompt, num_inference_steps=num_inference_steps, guidance_scale=8.0, lcm_origin_steps=50, output_type="pil").images
 ```
+
+### Our Contributors :
+<a href="https://github.com/luosiallen/latent-consistency-model/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=luosiallen/latent-consistency-model" />
+</a>
 
 ## BibTeX
 
