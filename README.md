@@ -23,7 +23,7 @@ Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-mod
 - (🔥New) 2023/10/19 LCM is integrated in 🧨 Diffusers library. Please refer to the "Usage".
 
 
-## 🔥 Image2Image Demos (Text-to-Image):
+## 🔥 Image2Image Demos (Image-to-Image):
 We support **Img2Img** now! Try the impressive img2img demos here: [Replicate](https://replicate.com/fofr/latent-consistency-model),   [SD-webui](https://github.com/0xbitches/sd-webui-lcm),  [ComfyUI](https://github.com/0xbitches/ComfyUI-LCM)
 
 Local gradio for img2img is on the way!
