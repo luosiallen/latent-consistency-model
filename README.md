@@ -33,6 +33,7 @@ Local gradio for img2img is on the way!
 </p>
 
 ## 🔥 Local gradio Demos (Text-to-Image):
+
 To run the model locally, you can download the "local_gradio" folder:
 1. Install Pytorch (CUDA). MacOS system can download the "MPS" version of Pytorch. Please refer to: [https://pytorch.org](https://pytorch.org)
 2. Install the main library:
@@ -105,6 +106,11 @@ num_inference_steps = 4
 
 images = pipe(prompt=prompt, num_inference_steps=num_inference_steps, guidance_scale=8.0, lcm_origin_steps=50, output_type="pil").images
 ```
+
+### Our Contributors :
+<a href="https://github.com/luosiallen/latent-consistency-model/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=luosiallen/latent-consistency-model" />
+</a>
 
 ## BibTeX
 
