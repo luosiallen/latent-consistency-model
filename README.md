@@ -22,6 +22,11 @@ Replicate Demo: [![Replicate](https://replicate.com/cjwbw/latent-consistency-mod
 - (🔥New) 2023/10/19 We provide the LCM model (Dreamshaper_v7) in 🤗 Hugging Face. Download [here](https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7).
 - (🔥New) 2023/10/19 LCM is integrated in 🧨 Diffusers library. Please refer to the "Usage".
 
+### Our Contributors :
+<a href="https://github.com/luosiallen/latent-consistency-model/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=luosiallen/latent-consistency-model" />
+</a>
+
 ## 🔥 Local gradio Demos:
 To run the model locally, you can download the "local_gradio" folder:
 1. Install Pytorch (CUDA). MacOS system can download the "MPS" version of Pytorch. Please refer to: [https://pytorch.org](https://pytorch.org)
