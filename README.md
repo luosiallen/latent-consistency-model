@@ -17,6 +17,7 @@ Project Page: https://latent-consistency-models.github.io
     <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a> for discussions. Coders are welcome to contribute.
 
 ## News
+- (🔥New) 2023/11/1 **Real-Time Latent Consistency Models** is out!! Github link [here](https://github.com/radames/Real-Time-Latent-Consistency-Model). Thanks [@radames](https://github.com/radames) for the really cool Huggingface🤗 demo [here](https://huggingface.co/spaces/radames/Real-Time-Latent-Consistency-Model). Twitter/X [Link](https://x.com/radamar/status/1718783886413709542?s=20).
 - (🔥New) 2023/10/28 We support **Img2Img** for LCM! Please refer to "🔥 Image2Image Demos".
 - (🔥New) 2023/10/25 We have official [**LCM Pipeline**](https://github.com/huggingface/diffusers/tree/main/src/diffusers/pipelines/latent_consistency_models) and [**LCM Scheduler**](https://github.com/huggingface/diffusers/blob/main/src/diffusers/schedulers/scheduling_lcm.py) in 🧨 Diffusers library now! Check the new "Usage".
 - (🔥New) 2023/10/24 Simple **Streamlit UI** for local use: See the [link](https://github.com/akx/lcm_test) Thanks for [@akx](https://github.com/akx).
