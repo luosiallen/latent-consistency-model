@@ -42,12 +42,12 @@ Local gradio for img2img is on the way!
 ## 🔥 Local gradio Demos (Text-to-Image):
 
 To run the model locally, you can download the "local_gradio" folder:
-1. Install Pytorch (CUDA). MacOS system can download the "MPS" version of Pytorch. Please refer to: [https://pytorch.org](https://pytorch.org)
+1. Install Pytorch (CUDA). MacOS system can download the "MPS" version of Pytorch. Please refer to: [https://pytorch.org](https://pytorch.org). Install [Intel Extension for Pytorch](https://intel.github.io/intel-extension-for-pytorch/xpu/latest/) as well if you're using Intel GPUs.
 2. Install the main library:
 ```
 pip install diffusers transformers accelerate gradio==3.48.0 
 ```
-3. Launch the gradio: (For MacOS users, need to set the device="mps" in app.py)
+3. Launch the gradio: (For MacOS users, need to set the device="mps" in app.py; For Intel GPU users, set `device="xpu"` in app.py)
 ```
 python app.py
 ```
