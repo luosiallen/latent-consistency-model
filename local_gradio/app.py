@@ -8,6 +8,10 @@ import gradio as gr
 import numpy as np
 import PIL.Image
 import torch
+try:
+    import intel_extension_for_pytorch as ipex
+except:
+    pass
 
 from diffusers import DiffusionPipeline
 import torch
@@ -22,7 +26,11 @@ import uuid
 DESCRIPTION = '''# Latent Consistency Model
 Distilled from [Dreamshaper v7](https://huggingface.co/Lykon/dreamshaper-7) fine-tune of [Stable Diffusion v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5) with only 4,000 training iterations (~32 A100 GPU Hours). [Project page](https://latent-consistency-models.github.io)
 '''
-if not torch.cuda.is_available():
+if torch.cuda.is_available():
+    DESCRIPTION += "\n<p>Running on CUDA 😀</p>"
+elif hasattr(torch, 'xpu') and torch.xpu.is_available():
+    DESCRIPTION += "\n<p>Running on XPU 🤓</p>"
+else:
     DESCRIPTION += "\n<p>Running on CPU 🥶 This demo does not work on CPU.</p>"
 
 MAX_SEED = np.iinfo(np.int32).max
@@ -35,9 +43,11 @@ USE_TORCH_COMPILE = os.getenv("USE_TORCH_COMPILE") == "1"
 """
    Operation System Options:
       If you are using MacOS, please set the following (device="mps") ;
-      If you are using Linux & Windows with GPU, please set the device="cuda";
+      If you are using Linux & Windows with Nvidia GPU, please set the device="cuda";
+      If you are using Linux & Windows with Intel Arc GPU, please set the device="xpu";
 """
 # device = "mps"    # MacOS
+# device = "xpu"    # Intel Arc GPU
 device = "cuda"   # Linux & Windows
 
 
