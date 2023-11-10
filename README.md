@@ -16,6 +16,11 @@ Project Page: https://latent-consistency-models.github.io
  <img src="./lcm_logo.png" width="4%" alt="" /> **LCM Community**: Join our LCM discord channels <a href="https://discord.gg/KM6aeW6CgD" style="text-decoration:none;">
     <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a> for discussions. Coders are welcome to contribute.
 
+## Breaking News 🔥🔥!!
+- (🤯New) 2023/11/10 **Training-free acceleration LCM-LoRA** is born! See our technical report [here](https://github.com/luosiallen/latent-consistency-model/blob/main/LCM-LoRA%20Technical%20Report/LCM-LoRA-Technical-Report.pdf) and Hugging Face blog [here](https://huggingface.co/blog/lcm_lora).
+- (⚡️New) 2023/11/10 LCM has a major update! We release **3 LCM-LoRA (SD-XL, SSD-1B, SD-V1.5)**, see [here](https://huggingface.co/latent-consistency/lcm-lora-sdxl).
+- (🚀New) 2023/11/10 LCM has a major update! We release **2 Full Param-tuned LCM (SD-XL, SSD-1B)**,  see [here](https://huggingface.co/latent-consistency/lcm-sdxl).
+
 ## News
 - (🔥New) 2023/11/1 **Real-Time Latent Consistency Models** is out!! Github link [here](https://github.com/radames/Real-Time-Latent-Consistency-Model). Thanks [@radames](https://github.com/radames) for the really cool Huggingface🤗 demo [Real-Time Image-to-Image](https://huggingface.co/spaces/radames/Real-Time-Latent-Consistency-Model), [Real-Time Text-to-Image](https://huggingface.co/spaces/radames/Real-Time-Latent-Consistency-Model-Text-To-Image). Twitter/X [Link](https://x.com/radamar/status/1718783886413709542?s=20).
 - (🔥New) 2023/10/28 We support **Img2Img** for LCM! Please refer to "🔥 Image2Image Demos".
