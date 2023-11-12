@@ -2,7 +2,7 @@
 
 Official Repository of the paper: [Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference](https://arxiv.org/abs/2310.04378).
 
-Official Repository of the paper: [LCM-LORA: A Universal Stable-Diffusion Acceleration Module](https://arxiv.org/abs/2311.05556).
+Official Repository of the paper: [LCM-LoRA: A Universal Stable-Diffusion Acceleration Module](https://arxiv.org/abs/2311.05556).
 
 Project Page: https://latent-consistency-models.github.io
 
