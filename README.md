@@ -163,6 +163,7 @@ images = pipe(prompt=prompt, num_inference_steps=num_inference_steps, guidance_s
 ## BibTeX
 
 ```bibtex
+LCM:
 @misc{luo2023latent,
       title={Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference}, 
       author={Simian Luo and Yiqin Tan and Longbo Huang and Jian Li and Hang Zhao},
@@ -170,5 +171,13 @@ images = pipe(prompt=prompt, num_inference_steps=num_inference_steps, guidance_s
       eprint={2310.04378},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+LCM-LoRA:
+@article{luo2023lcm,
+  title={LCM-LoRA: A Universal Stable-Diffusion Acceleration Module},
+  author={Luo, Simian and Tan, Yiqin and Patil, Suraj and Gu, Daniel and von Platen, Patrick and Passos, Apolin{\'a}rio and Huang, Longbo and Li, Jian and Zhao, Hang},
+  journal={arXiv preprint arXiv:2311.05556},
+  year={2023}
 }
 ```
