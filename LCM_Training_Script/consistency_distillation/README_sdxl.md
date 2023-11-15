@@ -2,6 +2,10 @@
 
 [Latent Consistency Models (LCMs)](https://arxiv.org/abs/2310.04378) is method to distill latent diffusion model to enable swift inference with minimal steps. This example demonstrates how to use the latent consistency distillation to distill SDXL for less timestep inference.
 
+## Reference to Hugging Face 🤗 Diffusers examples.
+
+You can also refer to the official implementation of LCM from huggingface diffusers, see [here](https://github.com/huggingface/diffusers/tree/main/examples/consistency_distillation)
+
 ## Full model distillation
 
 ### Running locally with PyTorch
