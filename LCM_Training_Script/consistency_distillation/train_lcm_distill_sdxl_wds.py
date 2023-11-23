@@ -325,7 +325,9 @@ def predicted_origin(model_output, timesteps, sample, prediction_type, alphas, s
         alphas = extract_into_tensor(alphas, timesteps, sample.shape)
         pred_x_0 = (sample - sigmas * model_output) / alphas
     elif prediction_type == "v_prediction":
-        pred_x_0 = alphas[timesteps] * sample - sigmas[timesteps] * model_output
+        sigmas = extract_into_tensor(sigmas, timesteps, sample.shape)
+        alphas = extract_into_tensor(alphas, timesteps, sample.shape)
+        pred_x_0 = alphas * sample - sigmas * model_output
     else:
         raise ValueError(f"Prediction type {prediction_type} currently not supported.")
 
