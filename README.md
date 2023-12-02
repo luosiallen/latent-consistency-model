@@ -19,6 +19,7 @@ Project Page: https://latent-consistency-models.github.io
     <img src="https://user-images.githubusercontent.com/25839884/218347213-c080267f-cbb6-443e-8532-8e1ed9a58ea9.png" width="3%" alt="" /></a> for discussions. Coders are welcome to contribute.
 
 ## Breaking News 🔥🔥!!
+- (🤖New) 2023/12/1  **Pixart-α X LCM** is out, a high quality image generative model. see [here](https://huggingface.co/spaces/PixArt-alpha/PixArt-LCM).
 - (❤️New) 2023/11/10 **Training Scripts** are released!! Check [here](https://github.com/luosiallen/latent-consistency-model/tree/main/LCM_Training_Script/consistency_distillation). 
 - (🤯New) 2023/11/10 **Training-free acceleration LCM-LoRA** is born! See our technical report [here](https://arxiv.org/abs/2311.05556) and Hugging Face blog [here](https://huggingface.co/blog/lcm_lora).
 - (⚡️New) 2023/11/10 LCM has a major update! We release **3 LCM-LoRA (SD-XL, SSD-1B, SD-V1.5)**, see [here](https://huggingface.co/latent-consistency/lcm-lora-sdxl).
